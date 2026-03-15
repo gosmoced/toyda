@@ -182,8 +182,9 @@
       trigger.addEventListener('click', () => {
         // Проигрываем звук
         if (sound) {
-            sound.currentTime = 0;
-            sound.play().catch(e => console.log("Браузер заблокировал звук", e));
+            const soundClone = sound.cloneNode();
+            soundClone.volume = 0.5; // Можно сделать чуть тише, если при частых кликах будет слишком громко
+            soundClone.play().catch(e => console.log("Браузер заблокировал звук", e));
         }
         // Создаем 25 цифр "25" по всему экрану в течение 1 секунды
         for (let i = 0; i < 25; i++) {
