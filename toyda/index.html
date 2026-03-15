@@ -25,10 +25,34 @@
         .font-heading { font-family: 'Playfair Display', serif; }
         .font-body { font-family: 'Lora', serif; }
         .metallic-gold {
-            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            background-image:
+                linear-gradient(to right,
+                    rgba(255,255,255,0) 0%,
+                    rgba(255,255,255,0) 35%,
+                    rgba(255,255,255,0.8) 50%,
+                    rgba(255,255,255,0) 65%,
+                    rgba(255,255,255,0) 100%),
+                linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+
+            background-size: 200% auto, auto;
+
+            background-position: 200% center, center center;
+
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(2px 4px 3px rgba(0,0,0,0.2));
+
+            animation: shimmer 3s infinite linear;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% center, center center;
+            }
+            100% {
+                background-position: -200% center, center center;
+            }
         }
         .embossed-text {
             text-shadow: 1px 1px 0px rgba(255,255,255,0.5), -1px -1px 0px rgba(0,0,0,0.3);
