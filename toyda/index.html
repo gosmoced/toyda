@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="cs"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Toyoda Gosei - 25. Výročí | Timeless Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <audio id="celebration-sound" src="zvuk-hlopushki.mp3" preload="auto"></audio>
+<style type="text/tailwindcss">
+        :root {
+            --sapphire-blue: #0F2540;
+            --rich-burgundy: #60101B;
+            --brushed-gold: #C5A059;
+            --off-white: #FAF9F6;
+            --border-color: #E5E1D8;
+        }
+        body {
+            background-color: var(--off-white);
+            background-image: radial-gradient(var(--border-color) 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+        }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Lora', serif; }
+        .metallic-gold {
+            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(2px 4px 3px rgba(0,0,0,0.2));
+        }
+        .embossed-text {
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.5), -1px -1px 0px rgba(0,0,0,0.3);
+        }
+        .heritage-frame {
+            position: relative;
+            border: 1px solid var(--border-color);
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .heritage-frame::before {
+            content: '';
+            position: absolute;
+            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid var(--brushed-gold);
+            pointer-events: none;
+            opacity: 0.4;
+        }
+        .filigree-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 30c0-5 5-10 10-10s10 5 10 10-5 10-10 10-10-5-10-10zm-20 0c0-5 5-10 10-10s10 5 10 10-5 10-10 10-10-5-10-10zm10-20c0-5 5-10 10-10s10 5 10 10-5 10-10 10-10-5-10-10zm0 40c0-5 5-10 10-10s10 5 10 10-5 10-10 10-10-5-10-10z' fill='%23C5A059' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        .material-symbols-outlined {
+            color: var(--brushed-gold);
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body class="text-[var(--sapphire-blue)] font-body antialiased selection:bg-[var(--brushed-gold)] selection:text-white">
+<header class="pt-0 pb-8 flex flex-col items-center justify-center bg-[#FEFEFE] border-b border-[var(--border-color)]">
+<div class="max-w-[300px] w-full px-6 mb-0">
+    <img src='toyda.jpg' alt="">
+</div>
+<div class="h-[1px] w-24 bg-[var(--brushed-gold)] opacity-50 mb-2"></div>
+<p class="font-heading italic tracking-[0.3em] text-[var(--rich-burgundy)] text-xs uppercase font-bold">時代を超えた卓越</p>
+</header>
+<section class="relative py-12 px-6 text-center filigree-bg">
+<div class="max-w-4xl mx-auto">
+<div class="relative inline-block mb-8">
+<div>
+    <h1 class="inline-block text-[14rem] md:text-[20rem] font-heading font-black leading-none metallic-gold embossed-text select-none cursor-pointer transition-transform duration-150 ease-in-out active:scale-95" id="anniversary-trigger">
+                25
+            </h1>
+</div>
+</div>
+    <p class="text-xs md:text-sm text-gray-400 font-body italic mb-0 animate-pulse">
+            Klikněte na číslo pro oslavu!
+        </p>
+<h2 class="font-heading text-4xl md:text-6xl text-[var(--sapphire-blue)] italic">
+            Oslava <span class="text-[var(--rich-burgundy)] font-bold not-italic">Kvality</span> a <span class="font-bold not-italic">Bezpečnosti</span>
+</h2>
+<div class="mt-8 flex items-center justify-center gap-4">
+<div class="h-[1px] w-12 bg-[var(--border-color)]"></div>
+<p class="text-[var(--brushed-gold)] font-heading uppercase tracking-[0.4em] text-sm font-bold">Čtvrtstoletí úspěchů</p>
+<div class="h-[1px] w-12 bg-[var(--border-color)]"></div>
+</div>
+</div>
+</section>
+<main class="max-w-5xl mx-auto px-6 space-y-24 py-24">
+<div class="heritage-frame text-center shadow-sm">
+<span class="material-symbols-outlined mb-6">explore</span>
+<h3 class="font-heading text-[var(--rich-burgundy)] uppercase tracking-widest font-bold text-sm mb-8">Nové Motto</h3>
+<blockquote class="text-3xl md:text-5xl font-heading text-[var(--sapphire-blue)] italic leading-tight">
+            „Toyoda Gosei: 25 let bezpečně vpřed.“
+        </blockquote>
+</div>
+<div class="heritage-frame text-center shadow-sm">
+<span class="material-symbols-outlined mb-6">auto_stories</span>
+<h3 class="font-heading text-[var(--sapphire-blue)] uppercase tracking-widest font-bold text-sm mb-8">Oficiální Přání</h3>
+<p class="text-xl md:text-2xl font-body text-[var(--sapphire-blue)] leading-relaxed max-w-2xl mx-auto italic">
+            Krásné 25. narozeniny, <span class="text-[var(--rich-burgundy)] font-semibold not-italic">Toyoda Gosei</span>! K tomuto významnému jubileu přeji firmě spoustu dalších úspěšných let, stabilní růst, inovativní nápady a skvělý tým. Ať je vaše další čtvrtstoletí ještě lepší a bezpečnější!
+        </p>
+</div>
+<div class="heritage-frame text-center shadow-sm">
+<span class="material-symbols-outlined mb-6">edit_note</span>
+<h3 class="font-heading text-[var(--rich-burgundy)] uppercase tracking-widest font-bold text-sm mb-10">Básnička k jubileu</h3>
+<div class="text-lg md:text-xl leading-loose font-body text-[var(--sapphire-blue)] italic space-y-1">
+<p>Pětadvacet úspěšných let,</p>
+<p>s Toyoda Gosei tvoříme svět.</p>
+<p>Bezpečnost, kvalita a dobrý tým,</p>
+<p>toto výročí s radostí slavím.</p>
+<div class="py-2 flex justify-center"><div class="w-8 h-[1px] bg-[var(--brushed-gold)] opacity-30"></div></div>
+<p>Ať se nám daří i další roky,</p>
+<p>vpřed děláme jen jisté kroky.</p>
+<p>V duchu dvacet pětky dnes,</p>
+<p>ať náš úspěch stoupá do nebes!</p>
+</div>
+</div>
+</main>
+<footer class="py-16 px-6 text-center border-t border-[var(--border-color)] bg-white/50">
+<div class="max-w-4xl mx-auto">
+<p class="font-body text-gray-500 text-sm italic">
+            Vytvořil: <span class="text-[var(--sapphire-blue)] font-semibold not-italic">Danyliuk Erik</span> |
+            <a class="text-[var(--rich-burgundy)] hover:text-[var(--brushed-gold)] transition-colors underline decoration-[var(--brushed-gold)]/30 underline-offset-4" href="mailto:danyliuk.erik@gmail.com">danyliuk.erik@gmail.com</a>
+</p>
+<div class="mt-4 flex flex-col items-center">
+<div class="h-[1px] w-8 bg-[var(--brushed-gold)] mb-4"></div>
+<p class="font-heading uppercase text-[10px] tracking-[0.5em] text-[var(--brushed-gold)] font-bold">CHOMUTOV, 2026</p>
+<p class="mt-1 text-[10px] text-gray-400 uppercase tracking-widest">Všechna práva vyhrazena k 25. výročí</p>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+    
+    const style = document.createElement('style');
+    style.innerHTML = `
+        @keyframes pop-up {
+            0% { transform: scale(0.5) translateY(20px); opacity: 0; }
+            20% { transform: scale(1.2) translateY(0); opacity: 1; }
+            100% { transform: scale(1) translateY(-100px); opacity: 0; }
+        }
+        .animate-pop-up {
+            animation: pop-up 2s ease-out forwards;
+        }
+    `;
+    document.head.appendChild(style);
+
+    const trigger = document.getElementById('anniversary-trigger');
+    const sound = document.getElementById('celebration-sound');
+    // Функция создания цифры "25" в рандомном месте экрана
+    function spawnFloatingNumber() {
+        const span = document.createElement('span');
+        span.innerText = '25';
+        span.className = 'font-heading font-black text-5xl md:text-7xl animate-pop-up metallic-gold';
+        // Фиксируем поверх всего
+        span.style.position = 'fixed';
+        span.style.pointerEvents = 'none';
+        span.style.zIndex = '9999';
+        // РАНДОМНАЯ ПОЗИЦИЯ по всему экрану
+        span.style.left = (Math.random() * 90 + 5) + 'vw';
+        span.style.top = (Math.random() * 90 + 5) + 'vh';
+        // Рандомный цвет: золото, синий или бордовый
+        const randomColor = Math.random();
+        if (randomColor > 0.66) {
+            span.classList.remove('metallic-gold');
+            span.style.color = 'var(--sapphire-blue)';
+            span.style.textFillColor = 'initial';
+            span.style.webkitTextFillColor = 'initial';
+        } else if (randomColor > 0.33) {
+            span.classList.remove('metallic-gold');
+            span.style.color = 'var(--rich-burgundy)';
+            span.style.textFillColor = 'initial';
+            span.style.webkitTextFillColor = 'initial';
+        }
+
+        document.body.appendChild(span);
+        setTimeout(() => span.remove(), 2000);
+    }
+    // Главное событие клика
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        // Проигрываем звук
+        if (sound) {
+            sound.currentTime = 0;
+            sound.play().catch(e => console.log("Браузер заблокировал звук", e));
+        }
+        // Создаем 25 цифр "25" по всему экрану в течение 1 секунды
+        for (let i = 0; i < 25; i++) {
+            setTimeout(spawnFloatingNumber, Math.random() * 1000);
+        }
+        // Запускаем хлопушки
+        const duration = 2 * 1000;
+        const animationEnd = Date.now() + duration;
+        const defaults = { startVelocity: 25, spread: 360, ticks: 100, zIndex: 1000 };
+
+        function randomInRange(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
+        const interval = setInterval(function() {
+          const timeLeft = animationEnd - Date.now();
+          if (timeLeft <= 0) return clearInterval(interval);
+          const particleCount = 40 * (timeLeft / duration);
+          confetti(Object.assign({}, defaults, {
+            particleCount,
+            origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+            colors: ['#0F2540', '#60101B', '#C5A059']
+          }));
+          confetti(Object.assign({}, defaults, {
+            particleCount,
+            origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+            colors: ['#0F2540', '#60101B', '#C5A059']
+          }));
+        }, 300);
+      });
+    }
+</script>
+</body></html>
